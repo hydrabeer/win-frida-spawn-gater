@@ -1,1 +1,1 @@
-# Frida Spawn Gater
+# Frida Spawn Gater for Windows 11
