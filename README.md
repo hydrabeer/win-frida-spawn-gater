@@ -20,6 +20,6 @@ options:
 ## Example
 
 Wait at most 30 seconds for `notepad.exe` to spawn, attaching with frida and forwarding the `-l agent.js` args to frida.
-```bash
+```cmd
 python frida_spawn_gater.py --timeout 30 notepad.exe -l agent.js
 ```
