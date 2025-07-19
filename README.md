@@ -1,6 +1,21 @@
 # Frida Spawn Gater for Windows 11
 
+## Requirements
+
+- [Frida](https://frida.re/docs/installation/) installed and on your PATH environment variable
+- [Python](https://www.python.org/downloads/) 3.10 or later
+
+### Install the dependencies
+
+```cmd
+pip install -r requirements.txt
+```
+
 ## Usage
+
+First install the dependencies:
+
+
 ```
 usage: frida_spawn_gater [-h] [--timeout SECS] [-q] [-v] PATTERN [FRIDA_ARGS]
 
