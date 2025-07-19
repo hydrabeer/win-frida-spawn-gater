@@ -105,13 +105,12 @@ def await_process(
             sys.stdout.flush()
             return None
 
-        wait_ms = (
-            None
-            if deadline is None
-            else max(0, int(min(deadline - time.time(), 1.0) * 1000))
-        )
-        evt = _next_event(watcher, wait_ms)
+        if deadline is None:
+            wait_ms = 200
+        else:
+            wait_ms = max(0, int(min(deadline - time.time(), 1.0) * 1000))
 
+        evt = _next_event(watcher, wait_ms)
         if evt and regex.search(f"{evt.Caption or ''}\0{evt.CommandLine or ''}"):
             sys.stdout.write("\b \b")
             sys.stdout.flush()
