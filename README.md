@@ -1,5 +1,7 @@
 # Frida Spawn Gater for Windows 11
 
+This script won't get in before the first instruction for the same reasons that frida's own spawn-gating feature is unsupported, but it's the best we can do on Windows 11 for now.
+
 ## Requirements
 
 - [Frida](https://frida.re/docs/installation/) installed and on your PATH environment variable
